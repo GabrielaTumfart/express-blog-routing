@@ -7,6 +7,9 @@ app.use(express.json());
 // Importo router
 const postsRouter = require("./routers/posts");
 
+// Registro il router con prefisso /posts
+app.use("/posts", postsRouter);
+
 const port = 3000;
 
 app.listen(port, () => {
