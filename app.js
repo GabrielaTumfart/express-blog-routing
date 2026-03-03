@@ -4,6 +4,8 @@ const app = express();
 
 app.use(express.json());
 
+app.use(express.static("public"));
+
 // Importo router
 const postsRouter = require("./routers/posts");
 
